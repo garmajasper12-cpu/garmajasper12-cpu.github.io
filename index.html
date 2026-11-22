@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#111113">
+    <meta name="description" content="Jasper Garma's portfolio — a Computer Science student aspiring to become a Network Engineer.">
+    <title>Jasper Garma - Portfolio</title>
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/about-me.css">
+    <link rel="stylesheet" href="css/skills.css">
+    <link rel="stylesheet" href="css/projects.css">
+    <link rel="stylesheet" href="css/accomplishments.css">
+    <link rel="stylesheet" href="css/contact.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+
+<script>
+document.documentElement.dataset.theme = localStorage.getItem("portfolio-theme") || "dark";
+</script>
+
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header>
+    <div class="header-inner">
+        <a class="brand" href="#home" aria-label="Jasper Garma, home">
+            <img class="brand-logo" src="images/jg.png" alt="Jasper Garma logo">
+        </a>
+
+        
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#certificates">Certificates</a></li>
+                <li><a href="mailto:garmajasper12@gmail.com">Contact</a></li>
+            </ul>
+        </nav>
+
+
+        <audio id="portfolio-audio" src="audio/ax-and-the-hatchetmen-hotel-room-lyric-video-320-kbps.mp3" preload="auto"></audio>
+
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to light mode" title="Switch to light mode">
+            <img class="sun-icon" src="images/sun-medium.png" alt="" aria-hidden="true">
+            <img class="moon-icon" src="images/moon.png" alt="" aria-hidden="true">
+        </button>
+
+
+        <div class="music-control">
+            <button class="music-toggle" id="music-toggle" type="button" aria-label="Play music" title="Play music" aria-pressed="false">
+                <img class="play-icon" src="images/volume-x.png" alt="" aria-hidden="true">
+                <img class="pause-icon" src="images/volume-2.png" alt="" aria-hidden="true">
+            </button>
+
+
+            <div class="music-volume-menu">
+
+                <select id="music-track" aria-label="music track">
+
+                    <option value="audio/ax-and-the-hatchetmen-hotel-room-lyric-video-320-kbps.mp3">Hotel Room </option>
+
+                    <option value="audio/strings-and-heart-eyes-on-him.mp3">Eyes on Him</option>
+                </select>
+
+                
+                <label class="music-shuffle">
+                    <input id="music-shuffle" type="checkbox">
+                    <span>Shuffle</span>
+                </label>
+                
+                <label for="music-volume">Volume <output id="volume-level" for="music-volume">10%</output>
+                </label>
+                <input id="music-volume" type="range" min="0" max="100" value="10" aria-label="Music volume">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="header-status">
+        <span>FOCUS: NETWORK ENGINEERING</span>
+        <span class="status-divider"></span>
+        <span>COMPUTER SCIENCE STUDENT · CSU CARIG</span>
+    </div>
+</header>
+
+
+
+
+<main id="main">
+<section id="home" class="home">
+    <div class="home-image">
+        <span class="image-label"></span>
+        <img class="home-image-art" src="images/download.png" alt="Portrait of Jasper Garma">
+        <span class="image-caption"><span class="status-dot">
+    </div>
+    <div class="home-text">
+        <p class="eyebrow"><span class="status-dot"></span> Computer Science student · CSU-CARIG</p>
+        <h1>Jasper Garma<span class="title-period">.</span></h1>
+        <h2>Aspiring Network Engineer</h2>
+        <p>
+            I am a third-year Computer Science student at Cagayan State University – Carig Campus with a strong interest in Network Engineering. 
+            I enjoy exploring new technologies, developing practical projects, and continuously improving my technical and problem-solving skills.
+        </p>
+        <div class="hero-actions">
+            <a class="button button-primary" href="#projects">Certificates<span aria-hidden="true">→</span></a>
+            <a class="button button-secondary" href="#contact">Get in touch</a>
+        </div>
+    </div>
+</section>
+
+<hr>
+
+<section id="about" class="about">
+    <div class="about-content">
+        <p class="eyebrow">alamin mo ako mwa</p>
+        <h2>About Me</h2>
+        <p>
+           I am currently a third-year Computer Science student at Cagayan State University – Carig Campus,
+           aspiring to become a Network Engineer.
+            I continuously improve my skills in programming, database management, and networking 
+            while gaining practical experience with Cisco Packet Tracer to build 
+            and simulate network infrastructures.
+        </p>
+        <div class="about-info">
+            <div>
+                <h4>Education</h4>
+                <p>BS Computer Science</p>
+            </div>
+            <div>
+                <h4>Focus</h4>
+                <p>Network Engineering</p>
+            </div>
+            <div>
+                <h4>Location</h4>
+                <p>Calayan Gonzaga Cagayan</p>
+            </div>
+           
+        </div>
+    </div>
+</section>
+
+<hr>
+
+<section id="projects">
+    <h2>Projects</h2>
+    <p class="section-subtitle">Have not yet uploaded any projects.</p>
+</section>
+
+<hr>
+
+<section id="certificates">
+    <p class="eyebrow">Recognition</p>
+    <h2>Certificates &amp; Achievements</h2>
+    <p class="section-subtitle">Academic and non-academic highlights from my college journey.</p>
+    <div class="achievement-groups">
+        <div class="achievement-group">
+            <h3>Academic</h3>
+            <div class="achievement-list">
+                <details class="achievement-card">
+                    <summary class="achievement-summary">
+                        <span class="achievement-icon" aria-hidden="true">N</span>
+                        <span>
+                            <strong>Networking 2nd runner-up</strong>
+                            <span class="achievement-description">Networking competition at ICT Uniwide 2026</span>
+                        </span>
+                    </summary>
+                    <div class="achievement-photos">
+                        <img src="images/ict-uniwide-2026.jpg" alt="Photo during the ICT Uniwide 2026 networking competition">
+                    </div>
+                </details>
+            </div>
+        </div>
+
+
+
+
+        <div class="achievement-group">
+            <h3>Non-academic</h3>
+            <div class="achievement-list">
+                
+                <details class="achievement-card">
+                    <summary class="achievement-summary">
+                        <span class="achievement-icon" aria-hidden="true">N</span>
+                        <span>
+                            <strong>College Day's Volleyball Champion</strong>
+                            <span class="achievement-description">September 13, 2025 · My First college volleyball competition</span>
+                        </span>
+                    </summary>
+                    <div class="achievement-photos">
+                        <img src="images/college-volleyball-2025.jpg" alt="Photo during the College Day volleyball competition">
+                    </div>
+                </details>
+
+
+                <details class="achievement-card">
+                    <summary class="achievement-summary">
+                        <span class="achievement-icon" aria-hidden="true">N</span>
+                        <span>
+                            <strong>Mount Cagua hike finisher</strong>
+                            <span class="achievement-description">Completed a five-hour hike · First hiking experience</span>
+                        </span>
+                    </summary>
+                    <div class="achievement-photos">
+                        <img src="images/mount-cagua-hike.jpg" alt="Photo from the Mount Cagua hike">
+                    </div>
+                </details>
+
+                 <details class="achievement-card">
+                    <summary class="achievement-summary">
+                        <span class="achievement-icon" aria-hidden="true">N</span>
+                        <span>
+                            <strong>College Day's Volleyball 1st Place</strong>
+                            <span class="achievement-description">August 13, 2026 · My Second college volleyball competition</span>
+                        </span>
+                    </summary>
+                    <div class="achievement-photos">
+                        <img src="images/img-20260904-101550-086.jpg" alt="Photo during the College Day volleyball competition">
+                    </div>
+                </details>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<hr>
+
+
+<section id="skills">
+    <div class="skills-section">
+        <h2>Tech stack</h2>
+        <p class="skills-intro">The languages and tools I use to build projects and explore networking.</p>
+        <div class="skills-category">
+            <h3>Languages &amp; web</h3>
+            <div class="skills-list">
+                <span><img src="images/python.png" alt="">Python</span>
+                <span><img src="images/html.png" alt="">HTML</span>
+                <span><img src="images/css.png" alt="">CSS</span>
+                <span><img src="images/javascript.png" alt="">JavaScript</span>
+            </div>
+        </div>
+
+
+        <div class="skills-category">
+            <h3>Tools &amp; platforms</h3>
+            <div class="skills-list">
+                <span><img src="images/vscode.png" alt="">VSCode</span>
+                <span><img src="images/cisco.png" alt="">Cisco</span>
+            </div>
+        </div>
+    </div>
+    </section>
+<hr>
+
+<section id="contact">
+    <div class="contact-content">
+        <p>For work, collabs &amp; everything else, reach me at</p>
+        <a class="contact-email" href="mailto:garmajasper12@gmail.com">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+                <rect x="3" y="5" width="18" height="14" rx="2"></rect>
+                <path d="m4 7 8 6 8-6"></path>
+            </svg>
+            <span>garmajasper12@gmail.com</span>
+        </a>
+    </div>
+</section>
+
+</main>
+<footer>
+    <p>&copy;Jasper Carlo V. Garma </p>
+</footer>
+<script>
+    const themeToggle = document.querySelector("#theme-toggle");
+    const musicToggle = document.querySelector("#music-toggle");
+    const portfolioAudio = document.querySelector("#portfolio-audio");
+    const musicTrack = document.querySelector("#music-track");
+    const musicShuffle = document.querySelector("#music-shuffle");
+    const musicVolume = document.querySelector("#music-volume");
+    const volumeLevel = document.querySelector("#volume-level");
+    const updateMusicToggle = () => {
+        const isPlaying = !portfolioAudio.paused;
+        const label = isPlaying ? "Pause music" : "Play music";
+        musicToggle.setAttribute("aria-label", label);
+        musicToggle.setAttribute("title", label);
+        musicToggle.setAttribute("aria-pressed", String(isPlaying));
+    };
+
+    const resumeAfterInteraction = (event) => {
+        if (event.target instanceof Element && event.target.closest("#music-toggle")) {
+            return;
+        }
+
+        document.removeEventListener("pointerdown", resumeAfterInteraction);
+        document.removeEventListener("keydown", resumeAfterInteraction);
+        startMusic();
+    };
+
+    const handlePlaybackError = (error) => {
+        if (error.name === "NotAllowedError") {
+            const label = "Autoplay blocked; click to play music";
+            musicToggle.setAttribute("aria-label", label);
+            musicToggle.setAttribute("title", label);
+            document.addEventListener("pointerdown", resumeAfterInteraction);
+            document.addEventListener("keydown", resumeAfterInteraction);
+            return;
+        }
+
+        console.error("Unable to play portfolio music.", error);
+        musicToggle.setAttribute("aria-label", "Music could not be played. Check the audio file.");
+        musicToggle.setAttribute("title", "Music could not be played. Check the audio file.");
+    };
+
+    const startMusic = () => {
+        portfolioAudio.play().catch(handlePlaybackError);
+    };
+
+    musicVolume.addEventListener("input", () => {
+        const volume = Number(musicVolume.value);
+        portfolioAudio.volume = volume / 100;
+        volumeLevel.value = `${volume}%`;
+        musicVolume.setAttribute("aria-valuetext", `${volume}%`);
+    });
+    musicVolume.dispatchEvent(new Event("input"));
+
+    musicToggle.addEventListener("click", () => {
+        if (!portfolioAudio.paused) {
+            portfolioAudio.pause();
+            return;
+        }
+
+        startMusic();
+    });
+
+    musicTrack.addEventListener("change", () => {
+        portfolioAudio.src = musicTrack.value;
+        portfolioAudio.load();
+        startMusic();
+    });
+
+    portfolioAudio.addEventListener("play", updateMusicToggle);
+    portfolioAudio.addEventListener("pause", updateMusicToggle);
+    portfolioAudio.addEventListener("ended", () => {
+        if (!musicShuffle.checked || musicTrack.options.length < 2) {
+            updateMusicToggle();
+            return;
+        }
+
+        const currentIndex = musicTrack.selectedIndex;
+        let nextIndex = currentIndex;
+        while (nextIndex === currentIndex) {
+            nextIndex = Math.floor(Math.random() * musicTrack.options.length);
+        }
+
+        musicTrack.selectedIndex = nextIndex;
+        portfolioAudio.src = musicTrack.value;
+        startMusic();
+    });
+    portfolioAudio.addEventListener("error", () => {
+        handlePlaybackError(new Error(portfolioAudio.error?.message ?? "Unknown audio error"));
+    });
+
+    startMusic();
+
+    themeToggle.addEventListener("click", () => {
+        const nextTheme = document.documentElement.dataset.theme === "dark" ? "light" : "dark";
+        document.documentElement.dataset.theme = nextTheme;
+        localStorage.setItem("portfolio-theme", nextTheme);
+
+        const nextLabel = `Switch to ${nextTheme === "dark" ? "light" : "dark"} mode`;
+        themeToggle.setAttribute("aria-label", nextLabel);
+        themeToggle.setAttribute("title", nextLabel);
+    });
+
+    const initialLabel = `Switch to ${document.documentElement.dataset.theme === "dark" ? "light" : "dark"} mode`;
+    themeToggle.setAttribute("aria-label", initialLabel);
+    themeToggle.setAttribute("title", initialLabel);
+</script>
+</body>
+</html>

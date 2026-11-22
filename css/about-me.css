@@ -1,0 +1,35 @@
+.about-content {
+    max-width: 800px;
+    margin: auto;
+}
+
+.about-content > p:not(.eyebrow) {
+    margin-bottom: 24px;
+}
+
+.about-info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+}
+
+.about-info div {
+    padding: 16px;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    background: var(--surface);
+}
+
+.about-info h4 {
+    color: var(--accent);
+}
+
+.about-info p {
+    color: var(--text);
+}
+
+@media (max-width: 600px) {
+    .about-info {
+        grid-template-columns: 1fr;
+    }
+}
